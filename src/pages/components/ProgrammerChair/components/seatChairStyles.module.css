@@ -1,0 +1,30 @@
+.seatContainer{
+    display: flex;
+    width:100%;
+}
+
+.seatTubeLeft{
+    border: 15px solid #B3B3B3;
+    border-top: 0px;
+    border-left:0px;
+    border-bottom-right-radius: 8px;
+    padding:5px;
+    margin-bottom:15px;
+}
+
+.seatTubeRight{
+    border: 15px solid #B3B3B3;
+    border-top: 0px;
+    border-right:0px;
+    border-bottom-left-radius: 8px;
+    padding:5px;
+    margin-bottom:15px;
+}
+
+.seat{
+    background-color: #4D4D4D;
+    border:1px solid #4D4D4D;
+    border-radius: 10px;
+    width:80%;
+    height:40px;
+}

@@ -1,8 +1,9 @@
-
+import ProgrammerBody from "./components/ProgrammerBody"
+import styles from "./homeStyles.module.css"
 const Home = () => {
   return (
-    <div>
-      
+    <div className={styles.homeContainer}>
+      <ProgrammerBody />
     </div>
   )
 }
