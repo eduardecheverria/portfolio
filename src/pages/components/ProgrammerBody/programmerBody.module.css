@@ -1,0 +1,63 @@
+.programmerBodyContainer{
+    position: absolute;
+    z-index:2;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    width:240px;
+    height: 600px;
+}
+
+.body{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyHead{
+    border-radius:90%;
+    border:1px solid #434343;
+    width:90px;
+    height: 100px;
+    background-color: #434343;
+    margin-bottom:-10px;
+    position: relative;
+    z-index:1;
+    border-bottom: 1px solid #f1c27d;
+}
+
+.bodyNeck{
+    width:30px;
+    height:50px;
+    border:1px solid #000;
+    background-color:#f1c27d;
+    position: relative;
+}
+
+.bodyBody{
+    width:80%;
+    height:180px;
+
+}
+
+.bodyArmContainer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyArmLeft,.bodyArmRight{
+    width:30px;
+    height:90px;
+    background-color: #000;
+    transform:rotate(-35deg);
+    border-bottom: 1px solid #000;
+    border-radius: 8px;
+}
+
+.bodyArmLeft{
+    transform:rotate(35deg);
+}

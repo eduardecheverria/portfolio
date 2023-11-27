@@ -1,0 +1,47 @@
+.backup{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 2px 0 3px;
+}
+
+.backupBack{
+    width: 180px;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 220px solid #4D4D4D;
+    border-radius: 8px;
+}
+
+.backupArmSupport{
+    background:#B3B3B3;
+    width: 15px;
+    height:150px;
+}
+
+.backupArmSupport__padded{
+    width:30px;
+    height:18px;
+    background-color: #4D4D4D;
+    border:1px solid#4D4D4D;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.backupContainer{
+    display: flex;
+    align-items: flex-end;
+    width:100%;
+    justify-content: center;
+}
+
+.backupSupportLeft,.backupSupportRight{
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

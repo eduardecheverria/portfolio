@@ -5,7 +5,13 @@ const ProgrammerDesktop = () => {
   return (
     <div className={styles.programmerDesktop}>
         <section className={styles.screenContainer}>
-            <section className={styles.screen}></section>
+          <section className={styles.screen}>
+              <section className={styles.screenBox}></section>
+          </section>
+          <div className={styles.screenSupport}>
+            <div className={styles.screenSupportTube}></div>
+            <div className={styles.screenSupportBase}></div>
+          </div>
         </section>
         <section className={styles.tableContainer}>
             <section className={styles.table}></section>

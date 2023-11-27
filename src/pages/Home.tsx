@@ -1,9 +1,9 @@
-import ProgrammerBody from "./components/ProgrammerBody"
+import ProgrammerDraw from "./components/ProgrammerDraw"
 import styles from "./homeStyles.module.css"
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
-      <ProgrammerBody />
+      <ProgrammerDraw />
     </div>
   )
 }
