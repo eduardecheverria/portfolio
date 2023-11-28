@@ -24,8 +24,12 @@ const ProgrammerBody = () => {
                         <div className={styles.forearm}></div>      
                     </div>
                     <div className={styles.bodyArmOutOfPlaceRight}>
-                        <div className={styles.bodyHand}></div>
-                        <div className={styles.forearm}></div>      
+                      <div className={styles.bodyArmRightContainer}>
+                        <div className={styles.containerToRotateRightArm}>
+                          <div className={styles.bodyHand}></div>
+                          <div className={styles.forearm}></div>
+                        </div>
+                      </div>      
                     </div>
                 </div>   
                 <div className={styles.bodyArmContainer}>

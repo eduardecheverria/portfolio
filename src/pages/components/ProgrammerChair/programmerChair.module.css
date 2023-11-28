@@ -1,6 +1,7 @@
 .programmerChair{
-    width:278px;
-    height: 400px;
+    width:48%;
+    min-width:290px;
+    min-height: 400px;
     border: 1px solid #000;
     position: relative;
     z-index: 3;
@@ -8,6 +9,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding:0 20px;
+    margin-top: 30%;
 }
 
 

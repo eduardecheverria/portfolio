@@ -63,7 +63,7 @@
     position: relative;
     z-index:1;
     border-bottom: 1px solid #f1c27d;
-    animation: turningRightHead 3s 1;
+    animation: turningRightHead 1s 1;
 }
 
 @keyframes turningRightEyeBrow {
@@ -106,7 +106,7 @@
     height:3px;
     background-color: #000;
     transform: rotate(10deg);
-    animation: turningRightEyeBrow 3s 1;
+    animation: turningRightEyeBrow 1s 1;
 }
 
 @keyframes turningRightMouth{
@@ -126,7 +126,7 @@
     width:12px;
     height:3px;
     background-color: #000;
-    animation: turningRightMouth 3s 1;
+    animation: turningRightMouth 1s 1;
 }
 
 @keyframes turningRightEye {
@@ -159,7 +159,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: turningRightEye 3s 1;
+    animation: turningRightEye 1s 1;
 }
 
 .bodyHeadEyeIris{
@@ -195,7 +195,7 @@
     border-left: 15px solid #f1c27d;
     border-top: 10px solid transparent;
     border-bottom: 3px solid transparent;
-    animation: turningRightNose 3s 1;
+    animation: turningRightNose 1s 1;
 }
 
 .bodyNeck{
@@ -249,23 +249,57 @@
     }
 }
 
+@keyframes keyBoardEnd {
+    0%{
+        transform: rotate(0deg);
+        margin-left: 0px;
+        margin-top:0px;
+    }
+    50%{
+        margin-top:50px;
+        transform: rotate(-30deg);
+    }
+    100%{
+
+        margin-left:50px;
+
+    }
+}
+
+
 .bodyArmOutOfPlaceContainer {
     display: flex;
     position: absolute;
     width:calc(60%);
     justify-content: space-between;
     height: 10px;
+    animation: keyBoardEnd .5s ease-in-out 1.5s 1 both;
+}
+
+@keyframes armExtension {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(60deg)
+
+    }
+}
+
+.bodyArmRightContainer{
+    transform-origin: bottom center;
+    animation: armExtension .5s ease-in-out 2s 1 both;
 }
 
 .bodyArmOutOfPlaceLeft{
-    margin-top:-50px;
-    animation: keyboardTouchLeft .5s infinite;
+    margin-top:0px;
+    animation: keyboardTouchLeft .5s 3;
     transform:rotate(35deg);
 }
 
 .bodyArmOutOfPlaceRight{
-    margin-top:0px;
-    animation: keyboardTouchRight .5s infinite;
+    margin-top:-50px;
+    animation: keyboardTouchRight .5s 3;
     transform:rotate(-35deg);
 }
 
@@ -301,7 +335,36 @@
     border-bottom: 1px solid #000;
     border-radius: 8px;
 }
+@keyframes armRotationRight {
+    0%{
+        transform: rotate(-25deg);
+        margin-left:0px;
+    }
+    100%{
+        transform: rotate(25deg);
+        margin-left:50px;
+    }
+}
+
+.bodyArmRight{
+    animation: armRotationRight .5s 1.5s 1 both;
+}
 
 .bodyArmLeft{
     transform:rotate(25deg);
+}
+
+@keyframes rotate3dRightArm{
+    0%{
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    50%{
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+    100%{
+        transform: rotate( 15deg);
+    }
+}
+.containerToRotateRightArm{
+    animation: rotate3dRightArm .5s 3s 1 both;
 }
