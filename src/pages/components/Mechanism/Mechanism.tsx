@@ -2,8 +2,9 @@ import styles from './mechanismStyles.module.css'
 const Mechanism = () => {
   return (
     <div className={styles.mechanism}>
-          <section className={styles.mechanismTube}> <section className={styles.handleTube}></section></section>
-         
+      <div className={styles.mechanismTube}>
+        <div className={styles.handleTube}></div>
+      </div>
     </div>
   )
 }

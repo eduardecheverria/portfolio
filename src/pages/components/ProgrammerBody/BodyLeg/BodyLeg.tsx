@@ -2,14 +2,14 @@ import styles from './bodyLegStyles.module.css'
 const BodyLeg = () => {
   return (
     <div className={styles.bodyLegsContainer}>
-        <section className={styles.bodyLegUniqueContainer}>
-            <section className={styles.bodyLeg}></section>
-            <section className={styles.bodyShoe}></section>
-        </section>
-        <section className={styles.bodyLegUniqueContainer}>
-            <section className={styles.bodyLeg}></section>
-            <section className={styles.bodyShoe}></section>
-        </section>
+        <div className={styles.bodyLegUniqueContainer}>
+            <div className={styles.bodyLeg}></div>
+            <div className={styles.bodyShoe}></div>
+        </div>
+        <div className={styles.bodyLegUniqueContainer}>
+            <div className={styles.bodyLeg}></div>
+            <div className={styles.bodyShoe}></div>
+        </div>
     </div>
   )
 }
