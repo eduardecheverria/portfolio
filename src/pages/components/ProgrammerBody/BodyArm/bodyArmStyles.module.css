@@ -1,0 +1,33 @@
+@keyframes armRotationRight {
+    0%{
+        transform: rotate(-25deg);
+        margin-left:0px;
+    }
+    100%{
+        transform: rotate(25deg);
+        margin-left:50px;
+    }
+}
+
+.bodyArmContainer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyArmLeft,.bodyArmRight{
+    width:30px;
+    height:90px;
+    background-color: #000;
+    transform:rotate(-25deg);
+    border-bottom: 1px solid #000;
+    border-radius: 8px;
+}
+
+.bodyArmRight{
+    animation: armRotationRight .5s 1.5s 1 both;
+}
+
+.bodyArmLeft{
+    transform:rotate(25deg);
+}

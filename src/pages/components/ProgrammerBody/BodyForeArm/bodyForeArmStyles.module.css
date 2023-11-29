@@ -1,0 +1,124 @@
+@keyframes keyBoardEnd {
+    0%{
+        transform: rotate(0deg);
+        margin-left: 0px;
+        margin-top:0px;
+    }
+    50%{
+        margin-top:50px;
+        transform: rotate(-30deg);
+    }
+    100%{
+
+        margin-left:50px;
+
+    }
+}
+
+@keyframes keyboardTouchLeft {
+    0% {
+        margin-top:-50px;
+    }
+    25%{
+        margin-top:0px;
+    }
+    50%{
+        margin-top:-50px;
+    }
+    75%{
+        margin-top:0px;
+    }
+    100%{
+        margin-top:-50px;
+    }
+}
+
+@keyframes keyboardTouchRight {
+    0% {
+        margin-top:0px;
+    }
+    25%{
+        margin-top:-50px;
+    }
+    50%{
+        margin-top:0px;
+    }
+    75%{
+        margin-top:-50px;
+    }
+    100%{
+        margin-top:0px;
+    }
+}
+
+@keyframes armExtension {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(60deg)
+
+    }
+}
+
+@keyframes rotate3dRightArm{
+    0%{
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    50%{
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+    100%{
+        transform: rotate( 15deg);
+    }
+}
+
+
+.bodyArmOutOfPlaceContainer {
+    display: flex;
+    position: absolute;
+    width:calc(60%);
+    justify-content: space-between;
+    height: 10px;
+    animation: keyBoardEnd .5s ease-in-out 1.5s 1 both;
+}
+
+.bodyArmOutOfPlaceLeft{
+    margin-top:0px;
+    animation: keyboardTouchLeft .5s 3;
+    transform:rotate(35deg);
+}
+
+.bodyArmOutOfPlaceRight{
+    margin-top:-50px;
+    animation: keyboardTouchRight .5s 3;
+    transform:rotate(-35deg);
+}
+
+
+.bodyArmRightContainer{
+    transform-origin: bottom center;
+    animation: armExtension .5s ease-in-out 2s 1 both;
+}
+
+.containerToRotateRightArm{
+    animation: rotate3dRightArm .5s 3s 1 both;
+}
+
+.bodyHand{    
+    width: 30px;
+    border-left: 0px solid transparent;
+    border-top: 20px solid #f1c27d;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-left: 0px!important; 
+}
+
+.forearm{
+    width:30px;
+    height:60px;
+    background-color: #000;
+    border-bottom: 1px solid #000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
