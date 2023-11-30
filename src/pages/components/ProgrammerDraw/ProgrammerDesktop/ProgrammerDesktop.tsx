@@ -14,10 +14,10 @@ const ProgrammerDesktop = () => {
           </div>
         </div>
         <div className={styles.tableContainer}>
-            <div className={styles.table}></div>
-            <div className={styles.legsContainer}>
-                <div className={styles.leg}></div>
-                <div className={styles.leg}></div>
+            <div className={styles.tableSurface}></div>
+            <div className={styles.tableLegsContainer}>
+                <div className={styles.tableLeg}></div>
+                <div className={styles.tableLeg}></div>
             </div> 
         </div>
     </div>

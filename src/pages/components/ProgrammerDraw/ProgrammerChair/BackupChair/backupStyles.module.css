@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:0 2px 0 3px;
+    margin:0 0 0 1px;
 }
 
 .backupBack{
@@ -19,7 +19,7 @@
 .backupArmSupport{
     background:#B3B3B3;
     width: 15px;
-    height:150px;
+    height:70px;
 }
 
 .backupArmSupport__padded{
@@ -39,7 +39,6 @@
 }
 
 .backupSupportLeft,.backupSupportRight{
-    height:120px;
     display: flex;
     flex-direction: column;
     justify-content: center;

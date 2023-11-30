@@ -5,16 +5,16 @@ import BackupChair from './components/BackupChair/BackupChair'
 const ProgrammerChair = () => {
   return (
     <div className={styles.programmerChair}>
-          <section className={styles.chairFooterContainer}>
+          <div className={styles.chairFooterContainer}>
               <BackupChair />
               <SeatChair />
               <div className={styles.support}></div>
               <div className={styles.footerRectangle}></div>
               <div className={styles.circleContainer} >
-                  <span className={styles.circle}></span>
-                  <span className={styles.circle}></span>
+                  <div className={styles.circle}></div>
+                  <div className={styles.circle}></div>
               </div>
-        </section>
+        </div>
     </div>
   )
 }

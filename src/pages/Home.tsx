@@ -1,4 +1,4 @@
-import ProgrammerDraw from "./components/ProgrammerDraw"
+import ProgrammerDraw from "./components/ProgrammerDraw/ProgrammerDraw"
 import styles from "./homeStyles.module.css"
 const Home = () => {
   return (
