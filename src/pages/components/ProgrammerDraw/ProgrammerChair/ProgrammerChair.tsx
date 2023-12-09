@@ -1,6 +1,6 @@
 import styles from './programmerChair.module.css'
-import SeatChair from './components/SeatChair/SeatChair'
-import BackupChair from './components/BackupChair/BackupChair'
+import SeatChair from './SeatChair/SeatChair'
+import BackupChair from './BackupChair/BackupChair'
 
 const ProgrammerChair = () => {
   return (

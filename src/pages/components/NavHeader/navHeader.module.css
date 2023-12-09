@@ -1,0 +1,40 @@
+.navHeader{
+    width:100%;
+    background:#20232a;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top:0;
+    z-index: 1;
+    padding:16px;
+    max-height: 80px;
+}
+.navHeaderContainer{
+    max-width:1200px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.restOfHeader{
+    display: flex;
+    align-items: center;
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+    margin-right:20px;
+}
+.navContainer ul{
+    display: flex;
+    align-items: center;
+}
+.navContainer ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navContainer img{
+    width:20px;
+    height: 20px;
+    margin-left:20px;
+}
