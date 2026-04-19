@@ -1,0 +1,117 @@
+.section {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.block {
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  background: linear-gradient(180deg, rgba(0, 240, 255, 0.04), transparent);
+  padding: 20px;
+  position: relative;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+.block:hover {
+  border-color: var(--neon-cyan);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 240, 255, 0.2);
+}
+
+.block:hover .value {
+  text-shadow: 0 0 12px currentColor;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-bright);
+  letter-spacing: 0.05em;
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--neon-cyan);
+  transition: text-shadow 0.3s;
+}
+
+.bar {
+  height: 6px;
+  background: rgba(108, 117, 145, 0.2);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  position: relative;
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--text-bright);
+  box-shadow: 0 0 8px var(--text-bright);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.tags span {
+  padding: 3px 8px;
+  border: 1px solid rgba(108, 117, 145, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin-bottom: 56px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .block {
+    padding: 16px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .value {
+    font-size: 20px;
+  }
+}
