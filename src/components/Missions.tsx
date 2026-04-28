@@ -1,4 +1,4 @@
----import { useI18n } from '@/hooks/useI18n';
+import { useI18n } from '@/hooks/useI18n';
 import { missions } from '@/data/missions';
 import { SectionHeader } from './SectionHeader';
 import type { Mission, MissionRarity, MissionStatus } from '@/types';
@@ -43,7 +43,7 @@ function MissionCard({ mission }: { mission: Mission }) {
   const { t } = useI18n();
 
   const cardClass = [styles.card, styles[mission.rarity]].filter(Boolean).join(' ');
-  const actionKey = ACTION_BY_ID[mission.id] ?? 'mission.action.visit';-
+  const actionKey = ACTION_BY_ID[mission.id] ?? 'mission.action.visit';
 
   const handleClick = () => {
     if (mission.link) {
